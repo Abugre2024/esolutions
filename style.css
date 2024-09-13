@@ -49,7 +49,46 @@
   background-color: rgb(236, 182, 182);
   width: 100%;
   height: 80px;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
 }
+
+ nav .example {
+  margin-right: 150px;
+  margin-top: 25px;
+} 
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
 
 .nav-items {
   display: flex;
@@ -62,6 +101,9 @@
   align-items: center;
   width: 80%;
   margin: auto;
+}
+
+.nav-items a {
   color: black;
 }
 
@@ -84,8 +126,6 @@
   background-size: cover;
   height: 500px;
   position: relative;
-  
-  
 }
 .headline {
   padding: 20px;
@@ -94,7 +134,6 @@
   bottom: 0;
   left: 0;
   color: white;
-
 }
 
 .bite {
@@ -208,9 +247,7 @@
   flex-direction: row;
 }
 
-
-
-  #features {
+#features {
   display: flex;
   justify-content: space-evenly;
   margin: 8rem 0;
@@ -237,8 +274,7 @@
 .feature-title {
   font-size: 30px;
   color: blue;
-} 
-
+}
 
 .footer-items {
   display: flex;
@@ -273,7 +309,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-
 }
 
 .footer-links a {
@@ -301,6 +336,10 @@ footer h3 {
   display: flex;
   border-radius: 20px;
   border: 1px solid gray;
+  overflow: hidden;
+}
+.newsletter-input button {
+  border: none;
 }
 
 footer input {
@@ -311,9 +350,42 @@ footer input {
 
 footer button {
   padding: 0 10px;
-  background-color: green;
-  color: white;
+  background-color: gray;
+  color: black;
   cursor: pointer;
 }
 
+.weekly-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
+  width: 100%;
+  column-gap: 20px;
+}
+
+.weekly-news-item {
+  position: relative;
+}
+
+.weekly-news-text {
+  position: absolute;
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-radius: 15px;
+  bottom: 0;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.WTN {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
